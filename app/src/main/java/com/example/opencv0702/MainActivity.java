@@ -154,8 +154,8 @@ public class MainActivity extends AppCompatActivity
         mOpenCvCameraView.setCvCameraViewListener(this);
         mOpenCvCameraView.setCameraIndex(1); // front-camera(1),  back-camera(0)
 
-
-        Button bluetoothbutton = (Button)findViewById(R.id.bluetooth);
+        /*버튼 이미지로 변경해서 이미지버튼으로 바꿨어용-미진*/
+        ImageButton bluetoothbutton = (ImageButton)findViewById(R.id.bluetooth);
 
         bluetoothbutton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -166,7 +166,7 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        Button button = (Button)findViewById(R.id.button);
+        ImageButton button = (ImageButton)findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
@@ -203,7 +203,7 @@ public class MainActivity extends AppCompatActivity
         });
 
         /*소연작성*/
-        Button watermark = (Button)findViewById(R.id.watermark);
+        ImageButton watermark = (ImageButton)findViewById(R.id.watermark);
         watermark.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 //Toast.makeText(getApplicationContext(), "워터마크", Toast.LENGTH_LONG).show();
