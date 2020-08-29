@@ -64,17 +64,17 @@ Java_com_example_opencv0702_MainActivity_loadCascade(JNIEnv *env, jobject thiz,
 
     if (((CascadeClassifier *) ret)->empty()) {
 
-        __android_log_print(ANDROID_LOG_DEBUG, "native-lib :: ",
-
-                            "CascadeClassifier로 로딩 실패  %s", nativeFileNameString);
+//        __android_log_print(ANDROID_LOG_DEBUG, "native-lib :: ",
+//
+//                            "CascadeClassifier로 로딩 실패  %s", nativeFileNameString);
 
     }
 
     else
 
-        __android_log_print(ANDROID_LOG_DEBUG, "native-lib :: ",
-
-                            "CascadeClassifier로 로딩 성공 %s", nativeFileNameString);
+//        __android_log_print(ANDROID_LOG_DEBUG, "native-lib :: ",
+//
+//                            "CascadeClassifier로 로딩 성공 %s", nativeFileNameString);
 
 
 
@@ -122,9 +122,9 @@ Java_com_example_opencv0702_MainActivity_detect(JNIEnv *env, jobject thiz,
 
     ret = faces.size();
 
-    __android_log_print(ANDROID_LOG_DEBUG, (char *) "native-lib :: ",
-
-                        (char *) "face %d found ", faces.size());
+//    __android_log_print(ANDROID_LOG_DEBUG, (char *) "native-lib :: ",
+//
+//                        (char *) "face %d found ", faces.size());
 
 
     for (int i = 0; i < faces.size(); i++) {
